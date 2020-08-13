@@ -1,1 +1,100 @@
 // Specific CSS for your home-page
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #BA274A;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: #6874E8;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.img {
+  height: 50px;
+}
+
+body {
+  background-color: white;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+h1 {
+  text-align: center;
+  color: #BA274A;
+  font-weight: bold;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.all_container {
+  background-color: #6874E8;
+}
+
+.dropdown-menu {
+  background-color: #BA274A;
+}
+
+.container h1 {
+  text-align: left;
+  color: #BA274A;
+}
+
+#banner-typed-text {
+  color: #BA274A;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: black;
+}
