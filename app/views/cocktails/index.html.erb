@@ -25,24 +25,18 @@
   </div>
 </div>
 
-<div class="banner" style="background-image: url(https://www.drinkmonger.com/images/cocktails-banner.jpg);">
   <div class="container">
-    <h1>Cocktail</h1>
-    <br>
-    <p>
-  <span id="banner-typed-text"></span>
-</p>
+  <h1><span id="banner-typed-text"></span></h1>
+    <p>You love cocktails?</p>
+    <p>You are in the good place!</p>
   </div>
-</div>
 
-
-<div class="all_container">
-<h1>All Cocktails available</h1>
+<div class="banner" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/bb/Cocktails_juice_%28Unsplash%29.jpg);">
 </div>
 
 <div class="block">
  <% @cocktails.each do |cocktail| %>
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( <%= image_path ("https://source.unsplash.com/500x300/?#{cocktail.name}") %>)">
  <a href=""><%= link_to cocktail.name, cocktail_path(cocktail) %></a>
 </div>
 <% end %>

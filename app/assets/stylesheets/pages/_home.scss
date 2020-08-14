@@ -11,6 +11,8 @@ a:hover {
 .navbar-lewagon {
   justify-content: space-between;
   background: #6874E8;
+  position: sticky;
+  top: 0;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -26,11 +28,11 @@ a:hover {
 }
 
 body {
-  background-color: white;
+  background-color: #DCDFF9;
 }
 
 .card-category {
-  background-size: cover;
+  background-size: fixed;
   background-position: center;
   width: 300px;
   height: 180px;
@@ -50,6 +52,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -62,9 +65,12 @@ h1 {
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  background-repeat: no-repeat;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bb/Cocktails_juice_%28Unsplash%29.jpg");
+  width: 100vw;
 }
 
-.banner h1 {
+.container h1 {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -72,15 +78,13 @@ h1 {
   font-weight: bold;
 }
 
-.banner p {
+.container p {
   font-size: 20px;
-  color: white;
+  color: black;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-
-.all_container {
-  background-color: #6874E8;
+  font-weight: bold;
+  background-color: #BA274A;
 }
 
 .dropdown-menu {
@@ -90,11 +94,21 @@ h1 {
 .container h1 {
   text-align: left;
   color: #BA274A;
+  padding-bottom: 15px;
 }
 
-#banner-typed-text {
+.container #banner-typed-text {
   color: #BA274A;
   font-weight: bold;
   font-size: 30px;
   background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #DCDFF9;
+  padding-top: 15px;
 }

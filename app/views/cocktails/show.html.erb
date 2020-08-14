@@ -8,6 +8,9 @@
 <% end %>
 <br>
 
-<%= link_to 'Back to the list of cocktail', cocktails_path %> |
+<%= link_to 'Back to the list of cocktail', cocktails_path, class: "back_link" %> |
 
-<%= link_to 'Add description and ingredient', new_cocktail_dose_path(@cocktail) %> |
+<%= link_to 'Add description and ingredient', new_cocktail_dose_path(@cocktail), class: "add_link"%> |
+
+<%= link_to icon('fas', 'trash'), cocktail_path(@cocktail), method: :delete, data: {confirm: "Delete #{@cocktail.name}"}, class: "delete_link" %>
+
